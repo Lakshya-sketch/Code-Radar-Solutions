@@ -3,7 +3,7 @@
 
 int main() {
     const char str[];
-    scanf("%s",&str)
-    print("Your entered: %s\n")
+    scanf("%s",&str);
+    print("Your entered: %s\n");
     return 0;
 }
