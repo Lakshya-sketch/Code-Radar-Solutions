@@ -2,7 +2,7 @@
 int main() {
     
     const char str[100];
-    scanf("%s",&str);
+    scanf("%99s",&str);
     printf("%s",str);
 
     return 0;
