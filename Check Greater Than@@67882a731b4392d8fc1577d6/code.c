@@ -5,8 +5,7 @@ int main() {
     scanf("%d",&b);
     if(a > b){
         prinf("True");
-    }
-    else{
+    }else{
         printf("False");
     };
     return 0;
