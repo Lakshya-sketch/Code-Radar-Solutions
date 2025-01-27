@@ -5,7 +5,7 @@ int main() {
     scanf("%d %d %d",&a,&b,&c);
     int average;
     average = (a+b+c)/3;
-    print("Average: %d",average);
+    printf("Average: %d",average);
    
     return 0;
 }
