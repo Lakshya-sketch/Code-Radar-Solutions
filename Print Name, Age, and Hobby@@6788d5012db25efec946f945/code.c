@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    const chr str[100];
+    const char str[100];
     int age;
-    const chr hobby[100];
+    const char hobby[100];
     scanf("%s",&str);
     scanf("%d",&age);
     scanf("%s",&hobby);
