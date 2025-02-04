@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char* welcome() {
+int main() {
     int a;
     scanf("%d",&a)
     for(int i = 0 ; i < a ;i++){
@@ -9,10 +9,5 @@ char* welcome() {
         }
         printf("\n");
     }
-    return
-}
-
-int main() {
-    printf("%s", welcome());
     return 0;
 }
