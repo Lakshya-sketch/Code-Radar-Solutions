@@ -5,8 +5,8 @@
 int main() {
     int a;
     scanf("%d" , &a);
-    for( int i = 0 ; i <= a ; i++){
-        for( int j = 0 ; j < a ; j+=2){
+    for( int i = 0 ; i < a ; i++){
+        for( int j = 0 ; j <= a ; j+=2){
             printf("*");
         }
         for( int j = 1  ; j <=a ; j+=2){
