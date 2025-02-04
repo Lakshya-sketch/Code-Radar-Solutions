@@ -7,12 +7,12 @@ int main() {
     scanf("%d" , &a);
     for( int i = 0 ; i < a ; i++){
         
-        for( int j = 0 ; j <= a ; j++){
+        for( int j = 0 ; j < a ; j++){
             if ( j % 2 == 0){
                 printf("*");
             }
             else{
-                printf(" ");
+                printf("#");
             }
             }
         
