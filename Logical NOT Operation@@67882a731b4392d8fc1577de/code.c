@@ -9,5 +9,9 @@ int main() {
     {
         printf("False");
     }
+
+    if( a == 0){
+        printf("True")
+    }
     return 0;
 }
