@@ -15,7 +15,9 @@ int main() {
             printf(" ")
         }
 
-        for( int  j = i; j <= ( i % 2) + 1 ; j++ )
+        for( int  j = i; j <= ( i % 2) + 1 ; j++ ){
+            printf(" ")
+        }
         }}
         
     
