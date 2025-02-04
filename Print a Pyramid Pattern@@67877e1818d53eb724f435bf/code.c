@@ -8,7 +8,7 @@ int main() {
             printf("*");
         }else{
 
-        for( int j = (i % 2) - 1 ;j <= ( i % 2) + 1 ; j++){
+        for( int j = (i % 2) - 1 ;j < ( i % 2) + 1 ; j++){
             printf("*");
         }}
         printf("\n");
