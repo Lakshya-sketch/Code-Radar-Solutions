@@ -4,7 +4,7 @@
 
 int main() {
     int a;
-    scanf("%a",&a);
+    scanf("%d",&a);
     for ( int i = 0; j < a ; i++){
         for( int j = 0;j < a ; j++){
             if ( j == a || i == a){
@@ -14,7 +14,7 @@ int main() {
                 printf(" ");
             }
         }
-    printf("\n")    
+    printf("\n");    
     }
 
     
