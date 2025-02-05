@@ -13,9 +13,9 @@ int main() {
     scanf("%d", &year);
     
     if (isLeapYear(year)) {
-        printf("%d is a leap year.\n", year);
+        printf("Leap year.\n");
     } else {
-        printf("%d is not a leap year.\n", year);
+        printf("Not a Leap Year\n");
     }
     
     return 0;
