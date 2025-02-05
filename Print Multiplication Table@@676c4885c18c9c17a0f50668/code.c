@@ -5,6 +5,7 @@ int main() {
     scanf("%d",&a);
     for( int i = 1 ; i <= 10 ; i++ ){
         printf("5 x %d = %d",a,i,a*i);
+        printf("\n")
     }
     return 0;
 }
