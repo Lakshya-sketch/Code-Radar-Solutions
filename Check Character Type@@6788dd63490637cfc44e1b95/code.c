@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 int main() {
-   const chr str[100];
-   scanf("%c",str);
-   if ((str == "a") || (str == "e") || ( str == "i") || ( str == "o") || (str == "u")){
-    printf("Vowel");
-   }else if((str == "!") || (str == "@") || (str == "#") || (str == "$") || (str == "%") || (str == "^") || (str == "&") || (str == "*") || (str == "(") || (str == ")")){
-    printf("Special Character");
-   }else{
-    printf("Consonant");
-   }
+    char ch;
+    scanf("%c", &ch);
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("Vowel");
+    } 
+    else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+        printf("Consonant");
+    } 
+    else if (ch >= '0' && ch <= '9') {
+        printf("Digit");
+    } 
+    else {
+        printf("Special Character");
+    }
 
     return 0;
 }
