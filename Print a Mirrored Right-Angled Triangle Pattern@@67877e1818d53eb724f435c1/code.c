@@ -2,9 +2,9 @@
 int main() {
     int a;
     scanf("%d",&a);
-    for ( int i = 0; j < a ; i++){
-        for( int j = 0;j < a ; j++){
-            if ( (j == a-1) || (i == a-1) || (i == j)){
+    for ( int i = 1; j <= a ; i++){
+        for( int j = 1;j <= a ; j++){
+            if ( (j == a) || (i == a) || (i == j)){
                 printf("*");
             }
             else{
