@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    const char str[100];
+    char str;
     int a,b;
-    scanf("%d %d", &a &b);
+    scanf("%d %d %c", &a &b &str);
     if ( str == "+"){
         printf("%d", (a + b));
     }
