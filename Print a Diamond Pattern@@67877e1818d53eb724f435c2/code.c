@@ -7,13 +7,10 @@ int main() {
         if ( i <= i % 2){
                 for( int j = 0 ; j < a ; j++){
                     if ( j == 0 || j == 1 || i == j){
-                        printf("*")
+                        printf("*");
                     }
                 }
             }
-        for ( int j = 0 ; j < 0; j++){
-            
-        }
         printf("\n");
     }
     return 0;
