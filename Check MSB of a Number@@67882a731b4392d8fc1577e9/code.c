@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
+    int a;
+    scanf("%d",&a);
     if( a == 0){
         printf("Set");
         break;
     }
-    int a;
-    scanf("%d",&a);
     int msb = 0;
     while (a > 0) {
         msb = a; 
