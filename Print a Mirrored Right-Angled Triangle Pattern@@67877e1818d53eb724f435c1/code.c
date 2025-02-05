@@ -8,14 +8,15 @@ int main() {
     for ( int i = 0; j < a ; i++){
         for( int j = 0;j < a ; j++){
             if ( j == a || i == a){
-                printf("*")
+                printf("*");
             }
             else{
-                printf(" ")
+                printf(" ");
             }
         }
-        
+    printf("\n")    
     }
+
     
     return 0;
 }
