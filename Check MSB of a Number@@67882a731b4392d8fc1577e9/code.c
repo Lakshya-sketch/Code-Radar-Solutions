@@ -1,5 +1,9 @@
 #include <stdio.h>
 int main() {
+    if( a == 0){
+        printf("Set");
+        break;
+    }
     int a;
     scanf("%d",&a);
     int msb = 0;
