@@ -2,22 +2,19 @@
 
 int main() {
     int a, b;
-    char op;
-    scanf("%d %d %c", &a, &b, &op);
-    if (op == '+') {
+    char str;
+    scanf("%d %d %c", &a, &b, &str);
+    if (str == '+') {
         printf("%d", a + b);
     }
-    else if (op == '-') {
+    else if (str == '-') {
         printf("%d", a - b);
     }
-    else if (op == '*') {
+    else if (str == '*') {
         printf("%d", a * b);
     }
-    else if (op == '/') { 
+    else{ 
         printf("%d", a / b);
-    }
-    else {
-        printf("Invalid operator");
     }
     
     return 0;
