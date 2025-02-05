@@ -7,10 +7,10 @@ int main() {
         printf("Valid");
     }
     else if( ( a==1) && ( b == 2) && ( c == 3)){
-        printf("Valid")
+        printf("Valid");
     }
     else if( ( a == 2) && ( b == 2) & ( c == 5)){
-        printf("Invalid")
+        printf("Invalid");
     }
     else{
         printf("Invalid");
