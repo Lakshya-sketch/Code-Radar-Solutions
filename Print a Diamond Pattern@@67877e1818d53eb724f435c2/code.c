@@ -9,7 +9,9 @@ int main() {
                     if ( j == 0 || j == 1 || i == j){
                         printf("*");
                     }
-                    else{" "}
+                    else{
+                        printf(" ")
+                    }
                 }
             }printf("\n");
         
