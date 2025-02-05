@@ -1,20 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    char str;
-    scanf("%d %d %c", &a, &b, &str);
-    if (str == '+') {
-        printf("%d", a + b);
-    }
-    else if (str == '-') {
-        printf("%d", a - b);
-    }
-    else if (str == '*') {
-        printf("%d", a * b);
-    }
-    else{
-        printf("%d", a / b);
+    int num1, num2;
+    char op;
+    
+    scanf("%d %d %c", &num1, &num2, &op);
+    
+    switch(op) {
+        case '+':
+            printf("%d", num1 + num2);
+            break;
+        case '-':
+            printf("%d", num1 - num2);
+            break;
+        case '*':
+            printf("%d", num1 * num2);
+            break;
+        case '/':
+            if(num2 == 0) {
+                printf("Error: Division by zero");
+                return 1;
+            }
+            printf("%d", num1 / num2);
+            break;
+        default:
+            printf("Error: Invalid operator");
     }
     
     return 0;
