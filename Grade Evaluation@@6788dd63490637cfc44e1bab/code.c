@@ -2,11 +2,7 @@
 
 int main() {
     char grade;
-    
-    // Input grade
     scanf("%c", &grade);
-    
-    // Evaluate grade using switch statement
     switch(grade) {
         case 'A':
             printf("Excellent");
