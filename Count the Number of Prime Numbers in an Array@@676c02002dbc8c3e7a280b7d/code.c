@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int Prime(int num) {
+int Prime(arr[i]) {
     if (num < 2) 
         return 0; 
     
@@ -10,7 +9,6 @@ int Prime(int num) {
     }
     return 1;
 }
-
 int main() {
     int a,count = 0;
     scanf("%d",&a);
@@ -19,7 +17,7 @@ int main() {
         scanf("%d",&arr[i]);
     for ( int i = 0 ; i < a ; i++){
         if (Prime(arr[i])){
-            count ++;
+            count++;
         }
         else{
             count = 0;
