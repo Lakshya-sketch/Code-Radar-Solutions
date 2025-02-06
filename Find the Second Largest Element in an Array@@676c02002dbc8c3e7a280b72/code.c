@@ -20,6 +20,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr, n);
-    printf("%d",arr[a-1]);
+    printf("%d",arr[n-1]);
     return 0;
 }
