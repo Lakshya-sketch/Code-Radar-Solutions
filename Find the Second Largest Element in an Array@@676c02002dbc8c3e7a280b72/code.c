@@ -27,7 +27,8 @@ int main() {
         printf("%d ", arr[i]);
     }
 
-    printf("%d",arr[a-1])
+    printf("%d",arr[a-1]);
+    
     
     return 0;
 }
