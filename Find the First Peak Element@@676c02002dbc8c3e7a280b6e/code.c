@@ -13,6 +13,7 @@ int main() {
     for (int i = 0; i < a; i++) {
         scanf("%d", &arr[i]);
     }
+    int isSame = 1;
     for (int i = 1; i < a; i++) {
         if (arr[i] != arr[0]) {
             isSame = 0;
@@ -41,6 +42,7 @@ int main() {
         printf("%d\n", arr[a - 1]);
         return 0;
     }
+
     printf("-1\n");
 
     return 0;
