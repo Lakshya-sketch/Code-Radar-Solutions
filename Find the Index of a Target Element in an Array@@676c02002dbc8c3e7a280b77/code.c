@@ -18,5 +18,6 @@ int main() {
     if (!(flag)){
         printf("-1");
     }
+    }
     return 0;
 }
