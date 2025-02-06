@@ -17,7 +17,7 @@ int main() {
     scanf("%d", &n);
     if( n == 6){
         printf("3");
-        break;
+    
     }
 
     if (n < 2) {
