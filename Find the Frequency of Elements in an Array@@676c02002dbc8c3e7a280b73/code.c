@@ -3,11 +3,11 @@
 int main() {
     int n, digit, count = 0;
     scanf("%d", &n);
+    scanf("%d", &digit);
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    scanf("%d", &digit);
 
     for (int i = 0; i < n; i++) {
         int num = arr[i];
