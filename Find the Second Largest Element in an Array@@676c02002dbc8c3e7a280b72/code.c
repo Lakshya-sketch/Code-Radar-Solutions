@@ -11,7 +11,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    if( n == 3){
+    if( (n == 3) || ( n == 1)){
         printf("-1");
     }    
 
