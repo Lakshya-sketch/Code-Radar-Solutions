@@ -3,7 +3,9 @@
 int main() {
     int a;
     scanf("%d", &a);
-    
+    if ( (arr[0] == arr[1]) && (arr[1] == arr[2])){
+        printf("-1");
+    }
     int arr[a];
     for (int i = 0; i < a; i++) {
         scanf("%d", &arr[i]);
