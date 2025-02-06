@@ -22,7 +22,7 @@ int main() {
             count +=1;
         }
         else{
-            count = 0
+            count = 0;
         }
     }
     printf("%d",count);
