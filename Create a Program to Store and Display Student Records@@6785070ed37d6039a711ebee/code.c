@@ -3,6 +3,7 @@
 void print(int Roll_Number , char Name , int Marks){
     scanf("%d %c %d",Roll_Number,Name,Marks);
     printf("Roll Number: %d Name: %c Marks: %d",Roll_Number,Name,Marks);
+    return void;
 }
 
 int main() {
