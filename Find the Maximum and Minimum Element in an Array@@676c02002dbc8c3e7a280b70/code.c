@@ -18,8 +18,8 @@ int main() {
             c = arr[i];
         }
     }
-    printf("%d",c)
-    printf("%d",b)
+    printf("%d",c);
+    printf("%d",b);
 
     return 0;
 }
