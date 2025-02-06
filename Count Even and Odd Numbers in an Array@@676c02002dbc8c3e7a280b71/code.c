@@ -12,8 +12,9 @@ int main() {
         if( (arr[i] % 2) == 0){
             e_count = e_count + 1;
         }
-        else{
+        else if( !(arr[i] % @) == 0){
             o_count = o_count + 1;
+        }
         }
     }
     printf("%d %d",e_count,o_count);
