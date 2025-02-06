@@ -8,7 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int b = 0;
-    int c = 9999999999;
+    int c = 9999;
     for( int i = 0 ; i < a ; i++){
         if (arr[i] > b){
             b = arr[i];    
