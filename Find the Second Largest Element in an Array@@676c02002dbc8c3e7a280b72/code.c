@@ -20,10 +20,12 @@ int main() {
         printf("-1");
     }
     for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for ( int i = 0; i < n l i++){
         if(arr[i] == arr[i+1]){
             printf("-1");
         }
-        scanf("%d", &arr[i]);
     }
     bubbleSort(arr, n);
     printf("%d",arr[n-2]);
