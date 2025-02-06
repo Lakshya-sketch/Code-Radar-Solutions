@@ -28,6 +28,6 @@ int main() {
         sum2 = sum2 + i;
     }
 
-    print("%d", sum2 - sum1);
+    printf("%d", sum2 - sum1);
     return 0;
 }
