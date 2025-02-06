@@ -3,8 +3,8 @@ int Prime(arr[i]) {
     if (arr[i] < 2) 
         return 0; 
     
-    for (int i = 2; i * i <= arr[i]; i++) {
-        if (arr[i] % i == 0) 
+    for (int j = 2; j * j <= arr[j]; j++) {
+        if (arr[i] % j == 0) 
             return 0; 
     }
     return 1;
