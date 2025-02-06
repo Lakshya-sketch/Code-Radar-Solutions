@@ -1,23 +1,26 @@
 #include <stdio.h>
+
 int main() {
-    int n, k;
+    int n;
     scanf("%d", &n);
+    
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
+    
     int flag = 0;
-    for ( int i = 0,j = n ; i < a, j > 0 ; i ++,j--){
-        if( arr[i] == arr[j]){
-            flag = 0;
-        }else{
+    for (int i = 0, j = n - 1; i < j; i++, j--) {
+        if (arr[i] != arr[j]) {
             flag = 1;
-        }    
+            break;
+        }
     }
-    if(flag){
-        printf("YES");
-    }else{
+    if (flag) {
         printf("NO");
+    } else {
+        printf("YES");
     }
+
     return 0;
 }
