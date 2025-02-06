@@ -1,10 +1,10 @@
 #include <stdio.h>
 int Prime(arr[i]) {
-    if (num < 2) 
+    if (arr[i] < 2) 
         return 0; 
     
-    for (int i = 2; i * i <= num; i++) {
-        if (num % i == 0) 
+    for (int i = 2; i * i <= arr[i]; i++) {
+        if (arr[i] % i == 0) 
             return 0; 
     }
     return 1;
