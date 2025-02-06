@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int a,n,arr[a];
+    int a,n;
     scanf("%d %d",&a,&n);
-    for( int = 0 ; i < a ; i++){
+    int arr[a];
+    for( int i = 0 ; i < a ; i++){
         scanf("%d",&arr[i]);
     }
     int b = 0;
@@ -18,8 +19,6 @@ int main() {
             c = arr[i];
         }
     }
-    printf("%d",c);
-    printf("%d",b);
-
+    printf("%d %d",c,b);
     return 0;
 }
