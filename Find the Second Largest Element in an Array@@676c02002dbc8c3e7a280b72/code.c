@@ -11,6 +11,6 @@ int main(){
             arr[i+1] = arr[i];
         }
     }
-    printf("%d",arr[a-2]) 
+    printf("%d",arr[a-2]) ;
     return 0;
 }
