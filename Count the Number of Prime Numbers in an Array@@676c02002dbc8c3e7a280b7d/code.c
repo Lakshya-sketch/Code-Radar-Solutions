@@ -18,8 +18,8 @@ int main() {
     for( int i = 0 ; i < a ; i ++){
         scanf("%d",&arr[i]);
     for ( int i = 0 ; i < a ; i++){
-        if (Prime(!(arr[i]))){
-            count +=1;
+        if (Prime(arr[i])){
+            count ++;
         }
         else{
             count = 0;
