@@ -3,10 +3,10 @@ int main(){
     int a,n;
     scanf("%d %d",&a,%n);
     int arr[a];
-    for( int i = 0; i < a ; i++){
+    for( int i = 0; i < a- 1 ; i++){
         scanf("%d",&arr[i]);
     }
-    for( int i = 0; i < sizeof(arr) ; i++){
+    for( int i = 0; i < a ; i++){
         if ( arr[i] < arr[i+1]){
             printf("Sorted");
         }
