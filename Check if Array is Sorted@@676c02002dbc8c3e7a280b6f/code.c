@@ -17,6 +17,7 @@ int main() {
         }
         else{
             printf("Sorted");
+            break;
         }
     }
     return 0;
