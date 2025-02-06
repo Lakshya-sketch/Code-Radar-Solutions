@@ -1,29 +1,29 @@
 #include <stdio.h>
+
 int Prime(arr[i]) {
-    if (arr[i] < 2) 
-        return 0; 
+    if (num < 2) 
+        return 0;
     
-    for (int j = 2; j * j <= arr[j]; j++) {
+    for (int j = 2; j * j <= arr[i]; j++) {
         if (arr[i] % j == 0) 
-            return 0; 
+            return 0;
     }
     return 1;
 }
+
 int main() {
-    int a,count = 0;
-    scanf("%d",&a);
+    int a, count = 0;
+    scanf("%d", &a); 
     int arr[a];
-    for( int i = 0 ; i < a ; i ++){
-        scanf("%d",&arr[i]);}
-        
-    for ( int i = 0 ; i < a ; i++){
-        if (Prime(arr[i])){
+    for (int i = 0; i < a; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 0; i < a; i++) {
+        if (Prime(arr[i])) {
             count++;
         }
-        else{
-            count = 0;
-        }
     }
-    printf("%d",count);
+    printf("%d\n", count);
+    
     return 0;
 }
