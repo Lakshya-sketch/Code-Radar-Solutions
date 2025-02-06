@@ -1,7 +1,7 @@
 #inlcude <stdio.h>
 int main(){
     int a,n;
-    scanf("%d",&a);
+    scanf("%d %d",&a,%n);
     int arr[a];
     for( int i = 0; i < n ; i++){
         scanf("%d",&arr[i]);
