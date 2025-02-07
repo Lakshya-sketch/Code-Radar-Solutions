@@ -13,7 +13,7 @@ int main() {
         for ( int j = 0 ; j < a ; j++){
             sum = arr[i] + arr[j];
             if( sum == target){
-                printf("%d %d\n", i , j);
+                printf("%d %d\n", arr[i] , arr[j]);
             }
         }
     }
