@@ -6,7 +6,7 @@ int main() {
     for ( int i = 0 ; i < a ; i++){
         scanf("%d",&arr[i]);
     }
-    int i = 0;
+    int count = 0;
     for ( int i = 0 ; i < a ; i++){
         for ( int j = ; j < a; j++){
             if( arr[i] == arr[j]){
