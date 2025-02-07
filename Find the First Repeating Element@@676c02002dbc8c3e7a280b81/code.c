@@ -9,7 +9,7 @@ int main() {
     }
     for ( int i = 0 ; i < a ; i++){
         for ( int j = 0 ; j < a ; j ++){
-            if ( arr[i+1] == arr[j]){
+            if ( arr[i] == arr[j+1]){
                 printf("%d",i);
             }
         }
