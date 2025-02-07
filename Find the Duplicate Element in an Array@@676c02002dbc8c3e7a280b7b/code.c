@@ -14,7 +14,7 @@ int main() {
             }
         }
         if ( count > 1){
-            printf("%d",count);
+            printf("%d",arr[i]);
             break;
         }
     }
