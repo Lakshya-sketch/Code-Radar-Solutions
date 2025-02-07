@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int digit_sum(int number) {
+    number = abs(number);
     int sum = 0;
     while (number > 0) { 
         sum = sum + (number % 10);
