@@ -18,6 +18,7 @@ int main() {
     int sum2 = 0;  
     int Big = arr[0];
     int Small = arr[0];
+
     for (int i = 1; i < a; i++) {
         if (arr[i] > Big) {
             Big = arr[i];
@@ -29,10 +30,8 @@ int main() {
     for (int i = 0; i < a; i++){
         sum1 += arr[i];
     }
+    sum2 = (Big * (Big + 1) / 2) - ((Small - 1) * Small / 2);
 
-    for (int i = Small; i <= Big; i++){
-        sum2 += i;
-    }
     printf("%d", (sum2 - sum1));
     
     return 0;
