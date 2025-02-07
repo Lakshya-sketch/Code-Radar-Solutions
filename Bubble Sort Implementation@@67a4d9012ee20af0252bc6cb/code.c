@@ -10,8 +10,6 @@ void bubbleSort(arr,n){
             }
         }
     }
-    return arr;
-
 }
 
 int main() {
@@ -22,6 +20,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
     bubbleSort(arr,n);
-    printArray(arr,n);
+    printf(arr);
     return 0;
 }
