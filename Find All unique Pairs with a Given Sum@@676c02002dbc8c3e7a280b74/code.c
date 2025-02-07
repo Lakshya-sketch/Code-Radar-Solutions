@@ -15,6 +15,7 @@ int main() {
             if( sum == target){
                 printf("%d %d", i , j);
             }
+            printf("\n")
         }
     }
     return 0;
