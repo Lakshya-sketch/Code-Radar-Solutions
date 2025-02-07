@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-void Is_Palendrome(arr[i]){
-    int last_digit,num,reverse = 0;
-    num = arr[i];
-    original = num;    
+int Is_Palendrome(int num){
+    int last_digit,reverse = 0;
+    int original = num;    
     while (num > 0) {
-        digit = num % 10;       
-        reverse = reverse * 10 + digit; 
+        last_digit = num % 10;       
+        reverse = reverse * 10 + last_digit; 
         num /= 10;               
     }
     if ( original == reverse){
@@ -27,7 +26,6 @@ int main() {
     }
     int count = 0;
     for( int i = 0 ; i < a ; i ++){
-        n
         if(Is_Palendrome(arr[i])){
             count++;
         }
