@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-void digit_sum(int arr[]){
+int digit_sum(int number){
     int sum = 0;
     int number;
-    numer = arr[i];
-    while (a >= 0){
+    while (number >= 0){
         sum = sum + (number % 10);
         number = number/10;
     }
@@ -19,7 +18,8 @@ int main() {
         scanf("%d",&arr[i]);
     }
     for ( int i = 0 ; i < a; i++){
-        printf("%d",digit_sum(int arr));
+        int ans = digit_sum(int number);
+        printf("%d",ans);
     }
 
     return 0;
