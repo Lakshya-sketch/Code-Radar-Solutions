@@ -11,6 +11,7 @@ int main() {
         for ( int j = 0 ; j < a ; j ++){
             if ( arr[i] == arr[j+1]){
                 printf("%d",i);
+                break;
             }
         }
     }
