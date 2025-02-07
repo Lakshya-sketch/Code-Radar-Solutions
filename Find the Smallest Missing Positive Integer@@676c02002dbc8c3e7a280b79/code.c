@@ -4,8 +4,6 @@
 int main() {
     int a;
     scanf("%d", &a);
-
-    // Check for valid array size
     if(a <= 0) {
         printf("Invalid array size.");
         return 1;
@@ -20,8 +18,6 @@ int main() {
     int sum2 = 0;  
     int Big = arr[0];
     int Small = arr[0];
-
-    // Find smallest and largest values in the array
     for (int i = 1; i < a; i++) {
         if (arr[i] > Big) {
             Big = arr[i];
@@ -30,18 +26,13 @@ int main() {
             Small = arr[i];
         }
     }
-
-    // Sum all elements of the array
     for (int i = 0; i < a; i++){
         sum1 += arr[i];
     }
 
-    // Sum of all numbers from Small to Big (inclusive)
     for (int i = Small; i <= Big; i++){
         sum2 += i;
     }
-
-    // The difference represents the sum of missing numbers in the range
     printf("%d", (sum2 - sum1));
     
     return 0;
