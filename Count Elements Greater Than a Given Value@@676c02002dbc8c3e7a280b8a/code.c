@@ -16,5 +16,4 @@ int main() {
     printf("%d",count);
     return 0;
 }
-    return 0;
 }
