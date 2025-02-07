@@ -1,6 +1,5 @@
 #include <stdio.h>
 int main() {
-    int main() {
     int a,b;
     scanf("%d %d",&a,&b);
     int arr[a];
@@ -15,5 +14,4 @@ int main() {
     }
     printf("%d",count);
     return 0;
-}
 }
