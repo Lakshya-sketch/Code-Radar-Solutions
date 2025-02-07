@@ -15,10 +15,10 @@ int main() {
             }
         }
     }
+    printf("%d",max);
     }
     else{
         printf("-1");
     }
-    printf("%d",max);
     return 0;
 }
