@@ -10,7 +10,6 @@ int main() {
         }
         else{
             printf("No");
-            break;
         }
     }
     return 0;
