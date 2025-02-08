@@ -4,6 +4,6 @@ int main(){
     scanf("%99s %99s",str1,str2);
     strcpy(str3,str1);
     strcat(str3,str2);
-    printf("%s",str1+str2);
+    printf("%s",str3);
     return 0;
 }
