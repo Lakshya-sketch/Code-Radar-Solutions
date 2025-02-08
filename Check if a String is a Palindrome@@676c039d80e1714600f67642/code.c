@@ -5,10 +5,12 @@ int main() {
     scanf("%99s",str);
     for( int i = 0,j = strlen(str) ; i < strlen(str) &&j > 0 ; i++,j--){
         if (!( str[i] == str[j])){
-            printf("No");
+            printf("Yes");
+            break;
         }
         else{
-            printf("Yes");
+            printf("No");
+            break;
         }
     }
     return 0;
