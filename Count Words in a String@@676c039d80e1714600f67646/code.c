@@ -12,6 +12,6 @@ int main() {
         }
     }
 
-    printf("%d\n", count); // Print number of spaces
+    printf("%d\n", count - 1); // Print number of spaces
     return 0;
 }
