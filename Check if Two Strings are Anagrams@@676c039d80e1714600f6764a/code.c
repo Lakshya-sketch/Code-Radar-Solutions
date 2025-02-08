@@ -20,10 +20,10 @@ int main() {
 
     }
     if ( flag2 == '1'){
-        printf("Yes");
+        printf("No");
     }
     else{
-        printf("No");
+        printf("Yes");
     }
     return 0;
 }
