@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string>
+#include <string.h>
 int main() {
     char str1[100],str2[100];
     scanf("%99s %99s",str1,str2);
