@@ -3,15 +3,14 @@
 
 int main() {
     char str[100];
-    fgets(str, sizeof(str), stdin); // Use fgets to read spaces in input
-
+    fgets(str, sizeof(str), stdin);
     int count = 0;
-    for (int i = 0; i < strlen(str); i++) { // Iterate through entire string
-        if (str[i] == ' ') { // Compare with space character
+    for (int i = 0; i < strlen(str); i++) {
+        if (str[i] == ' ') {
             count++;
         }
     }
 
-    printf("%d\n", count - 1); // Print number of spaces
+    printf("%d\n", count - 1); 
     return 0;
 }
