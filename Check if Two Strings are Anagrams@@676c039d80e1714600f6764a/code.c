@@ -14,6 +14,9 @@ int main() {
         if (!(flag)){
             flag2 = 0;
         }
+        else{
+            flag2 = 1;
+        }
 
     }
     if ( flag2 == '1'){
