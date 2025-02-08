@@ -6,8 +6,8 @@ int main() {
     int flag = 0;
     int flag2 = 0;
     for ( int i = 0 ; i < strlen(str1) ;i++){
-        for ( int j = 0 ; < strlen(str2) ;j++){
-            if( str1[i] == str[j] ){
+        for ( int j = 0 ;  j< strlen(str2) ;j++){
+            if( str1[i] == str2[j] ){
                 flag = 1;
             }
         }
@@ -16,7 +16,7 @@ int main() {
         }
 
     }
-    if ( flag2 == "1"){
+    if ( flag2 == '1'){
         printf("Yes");
     }
     else{
