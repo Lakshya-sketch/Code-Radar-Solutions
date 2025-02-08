@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-   char str[100],char find[2];
+   char str[100],find[2];
    scanf("%99s %s",str,find);
    int count = 0;
    for ( int i = 0 ; i < strlen(str) ; i++ ){
