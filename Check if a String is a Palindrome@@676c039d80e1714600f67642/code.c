@@ -4,7 +4,7 @@ int main() {
     char str[100];
     scanf("%99s",str);
     for( int i = 0,j = strlen(str) ; i < strlen(str) &&j > 0 ; i++,j--){
-        if (!( str[ji] == str[j])){
+        if (!( str[i] == str[j])){
             printf("No");
         }
         else{
