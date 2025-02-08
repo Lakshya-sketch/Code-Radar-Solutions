@@ -3,6 +3,6 @@
 int main() {
     char str[100];
     scanf("%99s",str);
-    printf("%d",lenstr(str));
+    printf("%d",strlen(str));
     return 0;
 }
