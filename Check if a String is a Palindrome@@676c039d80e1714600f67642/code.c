@@ -3,8 +3,8 @@
 int main() {
     char str[100];
     scanf("%99s",str);
-    for( int i = 0,j = lenstr(str) ; i < lenstr(str),j > 0 ; i++,j--){
-        if (!( str[j] == str[j])){
+    for( int i = 0,j = strlen(str) ; i < strlen(str) &&j > 0 ; i++,j--){
+        if (!( str[ji] == str[j])){
             printf("No");
         }
         else{
