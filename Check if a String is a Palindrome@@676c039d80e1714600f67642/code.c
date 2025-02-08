@@ -6,11 +6,10 @@ int main() {
     for( int i = 0,j = strlen(str) - 1 ; i < strlen(str) &&j > 0 ; i++,j--){
         if (!( str[i] == str[j])){
             printf("Yes");
-            break;
+            return 0;
         }
-        else{
-            printf("No");
-        }
+        
     }
+    return("No");
     return 0;
 }
