@@ -3,13 +3,14 @@
 
 int main() {
     char str[100];
-    scanf("%99s", str);
-    int  count = 0;
-    for( int i = 0 ; i < strlen(str) - 1 ; i++){
-        if( str[i] == " "){
-            count ++;
+    fgets(str, sizeof(str), stdin); 
+    int count = 0;
+    for (int i = 0; i < strlen(str); i++) {
+        if (str[i] == " ") {
+            count++;
         }
     }
-    printf("%d",count - 1);
+
+    printf("%d\n", count);
     return 0;
-    }
+}
