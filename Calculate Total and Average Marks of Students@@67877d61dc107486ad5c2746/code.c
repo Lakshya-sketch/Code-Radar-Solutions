@@ -24,7 +24,7 @@ int main() {
         scanf("%d %49s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
 
-    int total_marks;
+    float total_marks;
     float avg_marks;
     cal(students, n, &total_marks, &avg_marks);
 
