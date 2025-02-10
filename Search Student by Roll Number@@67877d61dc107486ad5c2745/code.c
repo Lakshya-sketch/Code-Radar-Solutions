@@ -16,7 +16,7 @@ int main() {
     int i;
     scanf("%d", &i);
     if (i >= 0 && i < n) {
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i-1].roll_number, students[i-1].name, students[i-1].marks);
     } else {
         printf("Student not found\n");
     }
