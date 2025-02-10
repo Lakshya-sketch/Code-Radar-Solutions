@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include <stdio.h>
+
 struct Student {
     int roll_number;
     char name[50];
@@ -24,7 +26,11 @@ int main() {
     }
     int Index = Top_scorer(students, n);
     printf("\nTop Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",
-           students[topIndex].roll_number, students[topIndex].name, students[topIndex].marks);
+           students[Index].roll_number, students[Index].name, students[Index].marks);
 
+    return 0;
+}
+
+int main() {
     return 0;
 }
