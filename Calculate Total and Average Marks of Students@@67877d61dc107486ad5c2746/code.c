@@ -5,13 +5,13 @@ struct Student {
     char name[50];
     float marks;
 };
-void cal(struct Student students[], int n, int *total, float *average) {
-    int sum = 0;
+void cal(struct Student students[], int n, float *total, float *average) {
+    float sum = 0;
     for (int i = 0; i < n; i++) {
         sum += students[i].marks;
     }
     *total = sum;
-    *average = (float)sum / n;
+    *average = sum / n;
 }
 
 int main() {
