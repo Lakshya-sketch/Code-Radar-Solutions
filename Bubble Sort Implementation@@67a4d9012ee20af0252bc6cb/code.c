@@ -10,7 +10,7 @@ int bubbleSort(int arr[], int n) {
     }
     return arr;
 }
-/*
+
 int main() {
     int n;
     scanf("%d", &n);
@@ -25,4 +25,4 @@ int main() {
         printf("%d ", arr[i]);
     }
     return 0;
-}*/
+}
