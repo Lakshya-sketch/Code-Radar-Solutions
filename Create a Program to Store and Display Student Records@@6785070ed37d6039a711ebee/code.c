@@ -9,16 +9,11 @@ int main() {
     scanf("%d", &n);
     struct Student students[n];
     for (int i = 0; i < n; i++) {
-        
-        scanf("%d", &students[i].roll_number);
-        getchar(); 
-        fgets(students[i].name, sizeof(students[i].name), stdin);
-        scanf("%f", &students[i].marks);
+        scanf("%d %49s %f",students.roll_number[i],students.name[i],students.marks[i]);        
     }
     for (int i = 0; i < n; i++) {  
-        printf("Roll Number: %d, ", students[i].roll_number);
-        printf("Name: %s", students[i].name); 
-        printf("Marks: %.2f\n", students[i].marks);
+       printf("%d %49s %f",students.roll_number[i],students.name[i],students.marks[i]);
+       printf("\n");
     }
 
     return 0;
