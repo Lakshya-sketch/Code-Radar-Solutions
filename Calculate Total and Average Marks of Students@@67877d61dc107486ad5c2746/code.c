@@ -28,7 +28,7 @@ int main() {
     float avg_marks;
     cal(students, n, &total_marks, &avg_marks);
 
-    printf("Total Marks: %d\n", total_marks);
+    printf("Total Marks: %.2f\n", total_marks);
     printf("Average Marks: %.2f\n", avg_marks);
 
     return 0;
