@@ -22,7 +22,7 @@ int main() {
         scanf("%d %49s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
     int Index = Top_scorer(students, n);
-    printf("\nTop Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f\n",
            students[Index].roll_number, students[Index].name, students[Index].marks);
 
     return 0;
