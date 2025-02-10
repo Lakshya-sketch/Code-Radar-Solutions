@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-#include <stdio.h>
-
 struct Student {
     int roll_number;
     char name[50];
@@ -31,6 +28,3 @@ int main() {
     return 0;
 }
 
-int main() {
-    return 0;
-}
