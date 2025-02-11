@@ -5,7 +5,7 @@ struct Days {
     int temp;
 };
 
-float Avg_temp(struct Days day[], int n) {
+float Avg_temp(struct Days day[]) {
    float sum = 0;
    for (int i = 0; i < 7; i++) {
        sum += day[i].temp;
@@ -15,11 +15,10 @@ float Avg_temp(struct Days day[], int n) {
 
 int main() {
     struct Days day[7];
-
     for (int i = 0; i < 7; i++) {
         scanf("%9s %d", day[i].name, &day[i].temp);
     }
 
-    printf("Average Temperature: %.2f\n", Avg_temp(day, n));
+    printf("Average Temperature: %.2f\n", Avg_temp(day));
     return 0;
 }
