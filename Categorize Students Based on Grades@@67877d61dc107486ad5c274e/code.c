@@ -2,33 +2,34 @@
 
 struct Student {
     int roll_number;
-    char name[50],grade[2];
+    char name[50];
+    float grade;
 };
 
-int Pass(struct Student students[], int n) {
-    for ( int i = 0 ; i < n;i++){
-        if( students[i].grade >= 85){
-            return students[i].roll_number,students[i].name,"A";
+void AssignGrades(struct Student students[], int n) {
+    for (int i = 0; i < n; i++) {
+        char grade;
+        if (students[i].grade >= 85) {
+            grade = 'A';
+        } else if (students[i].grade >= 70) {
+            grade = 'B';
+        } else {
+            grade = 'C';
         }
-        else if((students[i].grade >= 70) && (students[i].grade <=84) ){
-            return students[i].roll_number,students[i].name,"B";
-        }
-        else {
-            return students[i].roll_number,students[i].name,"C";
-        }
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", students[i].roll_number, students[i].name, grade);
     }
-    
 }
 
 int main() {
     int n;
     scanf("%d", &n);
     struct Student students[n];
+
     for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].grade);
     }
-    for ( int i = 0 ; i < n ;i++){
-        printf("Roll Number: %d, Name: %s, Grade: %s",Pass(students[],n));
-    }
+
+    AssignGrades(students, n);
+
     return 0;
 }
