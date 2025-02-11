@@ -6,7 +6,6 @@ struct Student {
     float marks;
 };
 
-// Corrected function signature and logic
 int func(struct Student students[], int n, float mark) {
     int count = 0;
     for (int i = 0; i < n; i++) {
