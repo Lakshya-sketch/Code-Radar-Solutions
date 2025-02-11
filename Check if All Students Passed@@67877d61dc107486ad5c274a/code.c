@@ -27,8 +27,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %49s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
-    int flagged = Pass(struct Student students[], int n);
-    if (flagged){
+    if (Pass(students, n)){
         printf("All Passed");
     }
     else{
