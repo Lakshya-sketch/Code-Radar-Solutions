@@ -13,7 +13,7 @@ int Pass(struct Student students[], int n) {
         flag = 1;
     }
     else{
-        flag = 0
+        flag = 0;
         break;
     }
     }
