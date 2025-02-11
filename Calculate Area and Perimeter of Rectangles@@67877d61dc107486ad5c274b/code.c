@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 struct Student {
-    float Length,breadth;
+    float Length, breadth;
 };
 
-int Area(struct students student,int n){
-    return students[i].Length * students[i].breadth;
+float Area(struct Student student) {
+    return student.Length * student.breadth;
 }
-int Peri(struct students student,int n){
-    return students[i].Length + students[i].breadth;
+
+float Peri(struct Student student) {
+    return 2 * (student.Length + student.breadth);
 }
 
 int main() {
@@ -16,10 +17,11 @@ int main() {
     scanf("%d", &n);
     struct Student students[n];
     for (int i = 0; i < n; i++) {
-        scanf("%f %f", &students[i].Length, students[i].breadth);
+        scanf("%f %f", &students[i].Length, &students[i].breadth);
     }
-    for(int i = 0 ; i < n ; i++){
-        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f",Area( students student,n),Peri(students student,n))
+    for (int i = 0; i < n; i++) {
+        printf("Rectangle %d: Area = %.2f, Perimeter = %.2f\n", i + 1, Area(students[i]), Peri(students[i]));
     }
+
     return 0;
 }
