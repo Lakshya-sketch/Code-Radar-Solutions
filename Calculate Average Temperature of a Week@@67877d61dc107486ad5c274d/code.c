@@ -10,7 +10,7 @@ float Avg_temp(struct Days day[], int n) {
    for (int i = 0; i < n; i++) {
        sum = sum + day[i].temp;
    }
-   n = float(n);
+   n = float n;
    return sum / n; 
 }
 
