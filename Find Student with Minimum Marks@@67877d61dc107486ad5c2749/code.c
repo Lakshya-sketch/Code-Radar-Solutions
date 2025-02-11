@@ -6,14 +6,17 @@ struct Student {
     float marks;
 };
 
-int Min(struct Student students[], int n, float mark) {
-    int Min = 999;
-    for (int i = 0; i < n; i++) {
-        if (students[i].marks < Min) {
-            Min = i;
+int Min(struct Student students[], int n) {
+    int minIndex = 0;  
+    float minMarks = students[0].marks;
+
+    for (int i = 1; i < n; i++) {  
+                if (students[i].marks < minMarks) {
+            minMarks = students[i].marks;
+            minIndex = i;
         }
     }
-    return Min;
+    return minIndex;
 }
 
 int main() {
@@ -23,8 +26,9 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d %49s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
-    index = func(students, n, mark);
-    printf("Student with Minimum Marks: Roll Number: %d, Name: %s ,Marks: %.2f", students[index].roll_number,students[index].name,students[index].marks);
+    int index = Min(students, n);
+    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f\n",
+           students[index].roll_number, students[index].name, students[index].marks);
 
     return 0;
 }
