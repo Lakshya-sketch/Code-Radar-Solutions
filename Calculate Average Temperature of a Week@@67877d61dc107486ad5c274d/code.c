@@ -7,18 +7,16 @@ struct Days {
 
 float Avg_temp(struct Days day[], int n) {
    float sum = 0;
-   for (int i = 0; i < n; i++) {
+   for (int i = 0; i < 7; i++) {
        sum += day[i].temp;
    }  
    return sum / (float)n; 
    }
 
 int main() {
-    int n;
-    scanf("%d", &n);
-    struct Days day[n];
+    struct Days day[7];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 7; i++) {
         scanf("%9s %d", day[i].name, &day[i].temp);
     }
 
