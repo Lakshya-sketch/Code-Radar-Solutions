@@ -28,7 +28,7 @@ int main() {
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].grade);
     }
     for ( int i = 0 ; i < n ;i++){
-        printf("Roll Number: %d, Name: %s, Grade: %s");
+        printf("Roll Number: %d, Name: %s, Grade: %s",Pass(students[],n));
     }
     return 0;
 }
