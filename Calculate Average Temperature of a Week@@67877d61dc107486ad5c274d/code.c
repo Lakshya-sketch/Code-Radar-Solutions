@@ -5,12 +5,12 @@ struct Days {
     int temp;
 };
 
-float Avg_temp(struct Days day[], int n) {
+int Avg_temp(struct Days day[], int n) {
    int sum = 0;
    for (int i = 0; i < n; i++) {
        sum = sum + day[i].temp;
    }
-   return (float)sum / n; 
+   return sum / n; 
 }
 
 int main() {
