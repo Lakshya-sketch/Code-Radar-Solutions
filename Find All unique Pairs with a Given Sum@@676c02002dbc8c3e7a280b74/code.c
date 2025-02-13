@@ -15,8 +15,8 @@ int main() {
             if( sum == target ){
                 printf("%d %d\n", arr[i] , arr[j]);
             }
-            break;
         }
+        break;
     }
     return 0;
 }
