@@ -1,14 +1,20 @@
 #include <stdio.h>
 
+int DecToBin(int n){
+     int bin = 0,rem,power = 1;
+     while ( n > 0){
+        rem = bin % 2;         
+        bin = bin / 2;
+        bin = bin + (rem * power);
+        power = power * 10;
+     }     
+     return bin;
+ }
+
 int main() {
-    int a;
-    scanf("%d",&a);
-    int ans,rem;
-    while( a > 0){
-        rem = a%2;
-        ans = (ans * 10) + rem;
-        a = a / 2;
-    }
-    printf("%d",&ans);
+    int n;
+    scanf("%d",&n);
+    printf("%d",n);
+
     return 0;
 }
