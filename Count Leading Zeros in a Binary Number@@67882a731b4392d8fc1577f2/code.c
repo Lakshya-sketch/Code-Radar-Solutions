@@ -20,7 +20,7 @@ int main() {
     int count = 0;
     scanf("%d", &n);
     DecToBin(n,bin);
-    int i = 0;
+    int i = 1;
     while( bin[i] != 1){
         count++;
         i++;
