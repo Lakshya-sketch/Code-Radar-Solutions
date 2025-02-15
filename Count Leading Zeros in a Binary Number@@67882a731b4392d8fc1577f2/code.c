@@ -7,7 +7,7 @@ int DecToBin(int n, int bin[64]) {
         n = n / 2;       
         i++;
     }
-    for (; i < 32; i++) {  
+    for (; i < 64; i++) {  
         bin[i] = 0;  
     }
     return bin[64];
