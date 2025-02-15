@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int GetBin(bin,position,n){
+int GetBin(int position,int n){
     return ((n & (1>>position)) != 0);
 }
 
