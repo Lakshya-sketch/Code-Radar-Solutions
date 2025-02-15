@@ -21,7 +21,7 @@ int main() {
     DecToBin(n,bin);
     for( int i = 31 ; i >= 0; i--){
         if( bin[i] == 1){
-            printf("%d",i);
+            printf("%d",31-i);
             break;
         }
     }
