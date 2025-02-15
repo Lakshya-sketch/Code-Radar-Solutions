@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-int DecToBin(int n,int bin[32]) { 
+int DecToBin(int n,int *bin) { 
     int i = 0;  
-
     if (n == 0) {
         printf("0\n");
-        return;
+        return 0;
     }
 
     while (n > 0) {
@@ -14,16 +13,17 @@ int DecToBin(int n,int bin[32]) {
         n = n / 2;       
         i--;
     }
-return bin[32];
+return *bin;
 }
 
 int main() {
-    int n,bin[32];
+    int n;
+    int bin[32];
     scanf("%d", &n);
-    DecToBin(n,bin[32]);
+    DecToBin(n,bin);
     for( int i = 0 ; i <= 31; i++){
         if( bin[i] == 1){
-            print("%d",i);
+            printf("%d",i);
             break;
         }
     }
