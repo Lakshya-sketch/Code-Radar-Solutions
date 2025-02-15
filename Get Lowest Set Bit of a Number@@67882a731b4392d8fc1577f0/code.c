@@ -9,9 +9,10 @@ int DecToBin(int n,int bin[32]) {
     }
 
     while (n > 0) {
+        i = 31;
         bin[i] = n % 2; 
         n = n / 2;       
-        i++;
+        i--;
     }
 return bin[32];
 }
@@ -20,7 +21,7 @@ int main() {
     int n,bin[32];
     scanf("%d", &n);
     DecToBin(n,bin[32]);
-    for( int i = 31 ; i >= 0 ; i--){
+    for( int i = 0 ; i <= 31; i++){
         if( bin[i] == 1){
             print("%d",i);
             break;
