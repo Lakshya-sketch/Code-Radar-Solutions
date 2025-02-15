@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int GetBin(int position,int n){
-    return ((n & (1>>position)) != 0);
+    return (n & (1 << position)) ? 1 : 0;
 }
 
 int main() {
