@@ -1,6 +1,5 @@
 #include <stdio.h> 
-int bin[64];
-void DecToBin(int n) {
+void DecToBin(int n,int bin[64]) {
     int i = 0;
     while (n > 0) {
         bin[i] = n % 2; 
@@ -14,6 +13,7 @@ void DecToBin(int n) {
 
 int main() {
     int n;
+    int bin[64];
     scanf("%d", &n);
 
     if ( n > 999){
@@ -21,7 +21,7 @@ int main() {
         return; 
     }
 
-    DecToBin(n); 
+    DecToBin(n,bin[64]); 
     int count = 0;
     for (int i = 31; i > 0; i--) {
         if (bin[i] == 0) {
