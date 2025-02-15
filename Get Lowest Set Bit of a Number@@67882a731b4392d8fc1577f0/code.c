@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-void DecToBin(int n) {
-    int bin[32]; 
+int DecToBin(int n,int bin[32]) { 
     int i = 0;  
 
     if (n == 0) {
@@ -14,14 +13,14 @@ void DecToBin(int n) {
         n = n / 2;       
         i++;
     }
-
+return bin[32];
 }
 
 int main() {
-    int n;
+    int n,bin[32];
     scanf("%d", &n);
-    DecToBin(n);
-    for( int i = 31 ; j >= 0 ; i--){
+    DecToBin(n,bin[32]);
+    for( int i = 31 ; i >= 0 ; i--){
         if( bin[i] == 1){
             print("%d",i);
             break;
