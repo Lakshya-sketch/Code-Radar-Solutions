@@ -3,13 +3,12 @@
 int DecToBin(int n) {
     int bin = 0, rem, power = 1;
     
-    while (n != 0) {
+    while (n > 0) {
         rem = n % 2;      
         n = n / 2;        
         bin = bin + (rem * power); 
         power = power * 10; 
     }
-
     return bin;
 }
 
