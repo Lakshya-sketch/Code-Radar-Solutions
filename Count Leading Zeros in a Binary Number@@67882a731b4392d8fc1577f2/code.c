@@ -1,30 +1,32 @@
 #include <stdio.h>
+#include <limits.h> 
 
-int DecToBin(int n,int *bin) { 
-    int i = 0;  
-    if (n == 0) {
-        printf("0\n");
-        return 0;
-    }
+void DecToBin(int n, int *bin) {  
+    for (int i = 0; i < 32; i++) {  
+        bin[i] = (n >> (31 - i)) & 1;  
+           }
+}
 
-    for(int i = 31 ; i >= 0 ; i--){
-        bin[i] = n % 2; 
-        n = n / 2;       
+int countLeadingZeros(int *bin) {
+    int count = 0;
+    for (int i = 0; i < 32; i++) {  
+        if (bin[i] == 1) {  
+            break;  
+        }
+        count++;
     }
-return *bin;
+    return count;
 }
 
 int main() {
     int n;
     int bin[32];
-    int count = 0;
-    scanf("%d", &n);
-    DecToBin(n,bin);
-    int i = 0;
-    while( bin[i] != 1){
-        count++;
-        i++;
-    }
-    printf("%d",count);
+
+    scanf("%d", &n);  
+    DecToBin(n, bin);
+
+    int leadingZeros = countLeadingZeros(bin);
+    printf("%d", leadingZeros);
+
     return 0;
 }
