@@ -14,7 +14,7 @@ int DecToBin(int n){
 int main() {
     int n;
     scanf("%d",&n);
-    printf("%d",n);
+    printf("%d",DecToBin(n));
 
     return 0;
 }
