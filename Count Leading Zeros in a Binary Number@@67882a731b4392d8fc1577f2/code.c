@@ -10,7 +10,7 @@ int DecToBin(int n, int bin[64]) {
     for (; i < 32; i++) {  
         bin[i] = 0;  
     }
-    return bin;
+    return bin[64];
 }
 
 int main() {  
