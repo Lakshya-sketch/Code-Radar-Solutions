@@ -23,7 +23,7 @@ int main() {
     }
     DecToBin(n, bin);
     int count = 0;
-    for (int i = 31; i >= 0; i--) {  
+    for (int i = 64; i >= 0; i--) {  
         if (bin[i] == 0) {  
             count++;  
         } else {  
