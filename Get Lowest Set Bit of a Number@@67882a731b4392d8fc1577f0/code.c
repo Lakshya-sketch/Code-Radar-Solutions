@@ -7,11 +7,9 @@ int DecToBin(int n,int *bin) {
         return 0;
     }
 
-    while (n > 0) {
-        i = 31;
+    for(int i = 31 ; i >= 0 ; i--){
         bin[i] = n % 2; 
         n = n / 2;       
-        i--;
     }
 return *bin;
 }
