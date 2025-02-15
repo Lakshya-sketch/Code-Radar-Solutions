@@ -19,9 +19,9 @@ int main() {
     int bin[32];
     scanf("%d", &n);
     DecToBin(n,bin);
-    for( int i = 0 ; i <= 31; i++){
+    for( int i = 31 ; i >= 0; i--){
         if( bin[i] == 1){
-            printf("%d",31-i);
+            printf("%d",i);
             break;
         }
     }
