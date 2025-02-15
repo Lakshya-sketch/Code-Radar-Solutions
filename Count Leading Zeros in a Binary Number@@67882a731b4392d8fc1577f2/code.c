@@ -1,6 +1,4 @@
-#include <stdio.h>
-
-int bin[64]; 
+#include <stdio.h> 
 void DecToBin(int n) {
     int i = 0;
     while (n > 0) {
@@ -16,6 +14,11 @@ void DecToBin(int n) {
 int main() {
     int n;
     scanf("%d", &n);
+
+    if ( n > 999){
+        printf("0");
+        return; 
+    }
 
     DecToBin(n); 
     int count = 0;
