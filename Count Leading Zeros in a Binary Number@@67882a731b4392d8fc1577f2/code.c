@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int bin[32]; 
+int bin[64]; 
 void DecToBin(int n) {
     int i = 0;
     while (n > 0) {
