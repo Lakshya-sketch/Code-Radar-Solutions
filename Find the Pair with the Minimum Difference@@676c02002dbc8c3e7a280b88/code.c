@@ -22,7 +22,7 @@ int main() {
             }
         }
     }
-    printf("%d %d",arr[x],arr[y]);
+    printf("%d %d",arr[y],arr[x]);
 
     return 0;
 }
