@@ -6,8 +6,9 @@ int main(){
     for ( int i = 0 ; i < n ; i++){
         scanf("%d",&arr[i]);
     }
+    int count = 0;
     for ( int i = 0 ; i < n ; i++){
-        int rem,count=0,ans,Pale;
+        int rem,ans,Pale;
         Pale = arr[i];
         while(Pale != 0){
             rem = Pale % 10;
@@ -15,7 +16,7 @@ int main(){
             ans /= 10;
         }
         if ( ans == arr[i]){
-            count++
+            count++;
         }
     }
     printf("%d",&count);
