@@ -5,8 +5,10 @@ int main(){
     for(int i = 0 ; i < a ; i++){
         int alpha = 65;
         for( int j = 0 ; j < i  ;j++){
-            printf("%c",alpha);
+            printf("%c ",alpha);
+            alpha ++;
         }
+        printf("\n");
     }
     return 0;
 }
