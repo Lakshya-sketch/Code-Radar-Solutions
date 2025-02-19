@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
 
 int main() {
     int a;
@@ -9,23 +11,20 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int min = 9999;
-    int x,y,diff;
-
-    for( int i = 0 ; i < a ;i++){
-        for( int j = i + 1 ; j < a ;j++){
-            diff = arr[i] - arr[j];
-            x = i;
-            y = j;
-            if(diff == 1){
-                break;
-            }
-            else if( diff < min){
-                min = diff;
+    int minDiff = INT_MAX; 
+    int x, y;
+    for (int i = 0; i < a; i++) {
+        for (int j = i + 1; j < a; j++) {
+            int diff = abs(arr[i] - arr[j]); 
+                if (diff < minDiff) { 
+                minDiff = diff;
+                x = arr[i];
+                y = arr[j];
             }
         }
     }
-    printf("%d %d",arr[y],arr[x]);
+
+    printf("%d %d\n", x, y);
 
     return 0;
 }
