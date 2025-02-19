@@ -13,7 +13,7 @@ int main(){
         while(Pale != 0){
             rem = Pale % 10;
             ans = ( ans * 10 ) + rem;
-            ans /= 10;
+            Pale /= 10;
         }
         if ( ans == arr[i]){
             count++;
