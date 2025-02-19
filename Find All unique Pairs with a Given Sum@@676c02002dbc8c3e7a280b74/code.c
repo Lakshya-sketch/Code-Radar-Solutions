@@ -22,7 +22,7 @@ int main() {
 
             if( (flag) && (arr[0] + arr[1] == target)){
                 printf("%d %d",arr[0],arr[i]);
-                break
+                break;
             }
 
             else if ( arr[i] + arr[j] == target){
