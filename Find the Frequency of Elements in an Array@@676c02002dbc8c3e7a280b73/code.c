@@ -7,18 +7,18 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    for (int i = 0; i < n; i++) {
-        int num = arr[i];
-
-        while (num > 0) {
-            if (num % 10 == digit) {
-                count++;
+    int target;
+    for (int i = 0 ; i < n ; i++){
+        target = arr[i];
+        count = 0;
+        for ( int j = i ; j < n ; j++){
+            if ( target == arr[j]){
+                count ++;
             }
-            num /= 10; 
         }
+        printf("%d %d",i,count);
     }
-    printf("%d %d", digit, count);
+
 
     return 0;
 }
