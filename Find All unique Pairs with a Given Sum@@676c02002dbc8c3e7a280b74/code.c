@@ -10,6 +10,10 @@ int main() {
     scanf("%d",&target);
     int flag = 1;
     for ( int i = 0 ; i < a ; i++){
+        if( (flag) && (arr[0] + arr[1] == target)){
+                printf("%d %d\n",arr[0],arr[i]);
+                break;
+            }
         for( int i = 0 ; i < a ;i++){
             if(arr[0] == arr[i]){
                 flag = 1;
@@ -19,13 +23,7 @@ int main() {
             }
         }
         for( int j = i + 1; j < a;j++){
-
-            if( (flag) && (arr[0] + arr[1] == target)){
-                printf("%d %d\n",arr[0],arr[i]);
-                break;
-            }
-
-            else if ( arr[i] + arr[j] == target){
+            if ( arr[i] + arr[j] == target){
                     printf("%d %d\n",arr[i],arr[j]);
             }
         }
