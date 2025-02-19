@@ -1,15 +1,19 @@
 #include <stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    for(int i =  1 ; i < n ; i++){
-        for(int j = 0 ; j < i ; j = j + 2){
-            printf("1 ");
+
+void printPattern(int n) {
+    for (int i = 1; i <= n; i++) {
+        int start = (i % 2 == 0) ? 0 : 1;
+            for (int j = 0; j < i; j++) {
+            printf("%d ", start);
+            start = 1 - start; 
         }
-        for(int j = i ; j < i ; j = j + 1){
-            printf("0 ");
-        }        
         printf("\n");
     }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printPattern(n);
     return 0;
 }
