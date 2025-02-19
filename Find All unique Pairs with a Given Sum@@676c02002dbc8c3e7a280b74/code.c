@@ -21,7 +21,7 @@ int main() {
         for( int j = i + 1; j < a;j++){
 
             if( (flag) && (arr[0] + arr[1] == target)){
-                printf("%d %d",arr[0],arr[i]);
+                printf("%d %d\n",arr[0],arr[i]);
                 break;
             }
 
