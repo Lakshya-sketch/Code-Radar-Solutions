@@ -18,7 +18,7 @@ int main() {
             x = i;
             y = j;
             if( diff < min){
-                min = dif;
+                min = diff;
             }
         }
     }
