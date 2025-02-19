@@ -18,7 +18,6 @@ int main() {
         }
         printf("%d %d\n",i,count);
     }
-
-
+    
     return 0;
 }
