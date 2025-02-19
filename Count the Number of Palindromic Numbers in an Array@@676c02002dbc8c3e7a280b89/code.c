@@ -8,7 +8,7 @@ int main(){
     }
     int count = 0;
     for ( int i = 0 ; i < n ; i++){
-        int rem,ans,Pale;
+        int rem,ans=0,Pale;
         Pale = arr[i];
         while(Pale != 0){
             rem = Pale % 10;
