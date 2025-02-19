@@ -11,7 +11,7 @@ int main() {
     for ( int i = 0 ; i < a ; i++){
         for( int j = 0 ; j < a;j++){
             if ( arr[i] + arr[j] == target){
-                printf("%d %d",i,j);
+                printf("%d %d\n",i,j);
             }
         }
     }
