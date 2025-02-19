@@ -9,12 +9,9 @@ int main() {
     int target;
     scanf("%d",&target);
     for ( int i = 0 ; i < a ; i++){
-        for( int j = i; j < a;j++){
+        for( int j = i + 1; j < a;j++){
             if ( arr[i] + arr[j] == target){
                     printf("%d %d\n",arr[i],arr[j]);
-            }
-            if( arr[i] == arr[j]){
-                break;
             }
         }
     }
