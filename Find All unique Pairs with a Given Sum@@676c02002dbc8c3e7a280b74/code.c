@@ -13,6 +13,9 @@ int main() {
             if ( arr[i] + arr[j] == target){
                     printf("%d %d\n",arr[i],arr[j]);
             }
+            if( arr[i] == arr[j]){
+                break;
+            }
         }
     }
     return 0;
