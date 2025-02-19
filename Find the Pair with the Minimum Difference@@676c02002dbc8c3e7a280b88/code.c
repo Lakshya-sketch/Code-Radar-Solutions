@@ -17,7 +17,10 @@ int main() {
             diff = arr[i] - arr[j];
             x = i;
             y = j;
-            if( diff < min){
+            if(diff == 1){
+                break
+            }
+            else if( diff < min){
                 min = diff;
             }
         }
