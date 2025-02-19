@@ -11,7 +11,13 @@ int main() {
     for ( int i = 0 ; i < a ; i++){
         for( int j = i; j < a;j++){
             if ( arr[i] + arr[j] == target){
+                if ( arr[i] == arr[j]){
+                    continue;
+                }
+                
+                else{
                 printf("%d %d\n",arr[i],arr[j]);
+                }
             }
         }
     }
