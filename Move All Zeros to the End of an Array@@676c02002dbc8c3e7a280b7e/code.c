@@ -20,9 +20,6 @@ int main(){
             arr[i] = arr[i+2];
             arr[i+2] = temp;
         }
-        else{
-            break;
-        }
     }
     for ( int i = 0 ; i < n ; i++){
         printf("%d ",arr[i]);
