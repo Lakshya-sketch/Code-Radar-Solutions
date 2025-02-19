@@ -13,7 +13,7 @@ int main() {
     int x,y,diff;
 
     for( int i = 0 ; i < a ;i++){
-        for( int j = 0 ; j < a ;j++){
+        for( int j = i ; j < a ;j++){
             diff = arr[i] - arr[j];
             x = i;
             y = j;
