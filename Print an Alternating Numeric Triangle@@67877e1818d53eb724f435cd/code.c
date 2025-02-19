@@ -2,18 +2,12 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int flag = 0;
     for(int i =  1 ; i <= n ; i++){
-        for(int j = 0 ; j < i ; j++){
-            flag = 0
-            if(flag){
-                printf("1");
-            }
-            flag = 1;
-            if(flag){
-                printf("0");
-            }
-
+        for(int j = 0 ; j < i ; j = j + 2){
+            printf("1 ");
+        }
+        for(int j = 0 ; j < i ; j = j + 1){
+            printf("0 ");
         }        
         printf("\n");
     }
