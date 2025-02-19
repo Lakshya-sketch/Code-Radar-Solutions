@@ -10,6 +10,10 @@ int main() {
     int count = 0;
     for (int i = 0; i < n; i++) {
         int num = arr[i], rem, reversed = 0;
+
+        if( num < 0){
+            continue;
+        }
         
         int original = num; 
         
