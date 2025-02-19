@@ -8,13 +8,25 @@ int main() {
     }
     int target;
     scanf("%d",&target);
+    int flag = 1;
     for ( int i = 0 ; i < a ; i++){
-        for( int j = i + 1; j < a;j++){
-            if ( arr[i] + arr[j] == target){
-                    printf("%d %d\n",arr[i],arr[j]);
+        for( int i = 0 ; i < a ;i++){
+            if(arr[0] == arr[i]){
+                flag = 1;
             }
-            if( arr[i] == arr[j]){
-                break;
+            else{
+                flag = 0;
+            }
+        }
+        for( int j = i + 1; j < a;j++){
+
+            if( (flag) && (arr[0] + arr[1] == target)){
+                printf("%d %d",arr[0],arr[i]);
+                break
+            }
+
+            else if ( arr[i] + arr[j] == target){
+                    printf("%d %d\n",arr[i],arr[j]);
             }
         }
     }
