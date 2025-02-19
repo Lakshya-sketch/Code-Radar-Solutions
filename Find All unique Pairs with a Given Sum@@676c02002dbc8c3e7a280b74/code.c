@@ -14,7 +14,7 @@ int main() {
                     printf("%d %d\n",arr[i],arr[j]);
             }
             if( arr[i] == arr[j]){
-                continue;
+                break;
             }
         }
     }
