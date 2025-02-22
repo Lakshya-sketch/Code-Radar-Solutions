@@ -10,7 +10,7 @@ int main(){
             count++;
         }
         if(count > 2){
-            break;
+            continue;
         }else{
         printf("%c: %d\n",str[i],count);
         }
