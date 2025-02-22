@@ -9,8 +9,8 @@ int main(){
             if(str[i] == str[j])
             count++;
         }
-        if(count > 2){
-            continue;
+        if(count >= 2){
+            break;
         }else{
         printf("%c: %d\n",str[i],count);
         }
