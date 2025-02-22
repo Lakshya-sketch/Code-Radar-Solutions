@@ -1,15 +1,17 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
-    char *str1[100];
-    fgets(str1,100,stdin);
-    for(int i = 0 ; i <= strlen(str) ; i++){
-        if( islower(str[i])){
-            str[i] = toupper(str[i]);
-        }elsr{
-            str[i] = tolower(str[i]);
-        }
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+    char str[100];  
+    fgets(str, sizeof(str), stdin);  
+    for (int i = 0; i < strlen(str); i++) {  
+        if (islower(str[i])) {
+            str[i] = toupper(str[i]);  
+        } else if (isupper(str[i])) {
+            str[i] = tolower(str[i]);          }
     }
-    puts(str);
+
+    printf("%s", str); 
     return 0;
 }
