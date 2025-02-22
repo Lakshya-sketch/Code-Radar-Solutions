@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    char Str[100],str1[100];
+    char str[100],str1[100];
     fgets(str,100,stdin);
     fgets(str1,100,stdin);
     char *Ptr = strstr(str, "ain");
