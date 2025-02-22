@@ -3,14 +3,16 @@
 
 int main() {
     char str[100];
-    char w1[2], w2[2];
-    scanf("%99s %1s %1s", str, w1, w2);
+    char w1, w2;
+
+    fgets(str, sizeof(str), stdin);
+    scanf(" %c", &w1); 
+    scanf(" %c", &w2);
     for (int i = 0; i < strlen(str); i++) {
-        if (str[i] == w1[0]) {
-            str[i] = w2[0];
+        if (str[i] == w1) {
+            str[i] = w2;
         }
     }
-    printf("%s", str);
-
+    puts(str);
     return 0;
 }
