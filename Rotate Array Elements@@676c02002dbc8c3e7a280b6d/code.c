@@ -11,7 +11,7 @@ void leftRotate(int arr[], int n, int b) {
     for (int i = 0; i < n - b; i++) {
         arr[i] = arr[i + b];
     }
-    
+
     for (int i = 0; i < b; i++) {
         arr[n - b + i] = temp[i];
     }
@@ -31,7 +31,7 @@ int main() {
     leftRotate(arr, n, b);
 
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d\n", arr[i]);
     }
 
     return 0;
