@@ -28,7 +28,7 @@ int main() {
     }
 
     for(int i = 0; i < n ; i++){
-        printf("%d %d", i , counter[i].count);
+        printf("%d %d\n", i , counter[i].count);
     }
 
     return 0;
