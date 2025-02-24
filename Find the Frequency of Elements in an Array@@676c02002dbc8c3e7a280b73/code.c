@@ -9,9 +9,6 @@ struct Element {
 
 int main() {
     int n;
-    
-    // Input the size of the array
-    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
     int arr[n];
