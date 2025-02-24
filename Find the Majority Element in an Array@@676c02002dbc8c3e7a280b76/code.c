@@ -53,7 +53,7 @@ int main() {
     }
 
     for (int i = 0; i < uniqueCount; i++) {
-        printf("%d %d\n", freq[i].value, freq[i].frequency);
+        printf("%d\n",freq[i].frequency);
     }
 
     return 0;
