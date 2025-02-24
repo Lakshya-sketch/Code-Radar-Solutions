@@ -39,7 +39,7 @@ int main() {
 
     for (int i = 0; i < uniqueCount; i++) {
         if(counter[i].count > max){
-           max = counter[i].count       
+           max = counter[i].count;       
            }
     }
 
