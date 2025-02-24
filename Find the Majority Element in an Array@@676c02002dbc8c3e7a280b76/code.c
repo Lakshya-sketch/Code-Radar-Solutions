@@ -14,6 +14,7 @@ int main() {
     int arr[n];
     struct Element freq[n]; 
     bool visited[n];
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
         visited[i] = false; 
@@ -35,24 +36,25 @@ int main() {
         }
     }
 
-    int max = 9999,index;
-
+    int max = 0;
     for (int i = 0; i < uniqueCount; i++) {
-        if(counter[i].count > max){
-           max = counter[i].count;       
-           }
+        if (freq[i].frequency > max) {
+            max = freq[i].frequency;       
+        }
     }
 
-    for( int i = 0 ; i < uniqueCount ;i++){
-        for( int j = 0 ; j < uniqueCount ;i++){
-            if(counter[i].count == counter[j].count){
-                printf("-1");
+    for (int i = 0; i < uniqueCount; i++) {
+        for (int j = i + 1; j < uniqueCount; j++) {
+            if (freq[i].frequency == freq[j].frequency) {
+                printf("-1\n");
                 return 0;
             }
         }
     }
-    for( int i = 0 ; i < uniqueCount ;i++){
-        printf("%d %d",counter[i].value,counter[i].count);
+
+    for (int i = 0; i < uniqueCount; i++) {
+        printf("%d %d\n", freq[i].value, freq[i].frequency);
     }
+
     return 0;
 }
