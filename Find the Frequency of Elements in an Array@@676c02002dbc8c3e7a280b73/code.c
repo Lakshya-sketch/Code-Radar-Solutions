@@ -25,7 +25,10 @@ int main() {
                 counter[i].count++;
             }
         }
-        printf("%d %d\n", arr[i], counter[i].count);
+    }
+
+    for(int i = 0; i < n ; i++){
+        printf("%d %d", i , counter[i].count);
     }
 
     return 0;
