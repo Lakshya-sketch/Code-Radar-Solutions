@@ -7,9 +7,9 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int temp_arr[n]
+    int temp_arr[n];
     for( int i = 0 ; i < n ;i++){
-        temp_arr[i] = "0";
+        temp_arr[i] = 0;
     }
     for( int i = 0 ; i < n ; i++){
         if( arr[i] != 0){
@@ -20,7 +20,7 @@ int main() {
     int final_arr[n],i = 0;
     while(temp_arr[i] != 0){
         final_arr[i] = temp_arr[i];
-        i++
+        i++;
     }
 
     for( int i = sizeof(temp_arr); i <= n; i++ ){
