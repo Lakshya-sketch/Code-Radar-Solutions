@@ -8,8 +8,8 @@ int main(){
     }
     scanf("%d",&b);
     for( int i = 0 ; i < b ; i++){
-        if( i == sizeof(arr) - 1){
-            arr[(sizeof(arr)-1)] = arr[0];  
+        if( i == a){
+            arr[a] = arr[0];  
         }
         else{
             arr[i] = arr[i+1];
