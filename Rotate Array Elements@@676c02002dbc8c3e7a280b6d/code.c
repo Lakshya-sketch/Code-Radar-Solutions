@@ -9,10 +9,10 @@ int main(){
     scanf("%d",&b);
     for( int i = 0 ; i < b ; i++){
         if( i == sizeof(arr) - 1){
-            arr[0] = arr[(sizeof(arr)-1)];  
+            arr[(sizeof(arr)-1)] = arr[0];  
         }
         else{
-            arr[i+1] = arr[i];
+            arr[i] = arr[i+1];
         }
     }
     for(int i = 0 ; i <= a ; i++){
