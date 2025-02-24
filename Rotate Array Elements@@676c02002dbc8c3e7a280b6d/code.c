@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 void leftRotate(int arr[], int n, int b) {
-    b = b % n; 
     int temp[b];
 
     for (int i = 0; i < b; i++) {
