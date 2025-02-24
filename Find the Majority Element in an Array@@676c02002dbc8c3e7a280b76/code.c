@@ -52,7 +52,7 @@ int main() {
         }
     }
     for( int i = 0 ; i < uniqueCount ;i++){
-        printf("%d %d",counter[i].value,counter[i],count);
+        printf("%d %d",counter[i].value,counter[i].count);
     }
     return 0;
 }
