@@ -7,25 +7,29 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    for (int i = 0; i < n - 2; i++) {
-        if (arr[i] == 0) {
-            if (arr[i + 1] == 0) {
-                int temp = arr[i];
-                arr[i] = arr[i + 2];
-                arr[i + 2] = temp;
-            } else {
-                if (i + 2 < n) {
-                    int temp = arr[i];
-                    arr[i] = arr[i + 2];
-                    arr[i + 2] = temp;
-                }
-            }
+    int temp_arr[n]
+    for( int i = 0 ; i < n ;i++){
+        temp_arr[i] = "0";
+    }
+    for( int i = 0 ; i < n ; i++){
+        if( arr[i] != 0){
+            temp_arr[0] = arr[i];
         }
     }
 
+    int final_arr[n],i = 0;
+    while(temp_arr[i] != 0){
+        final_arr[i] = temp_arr[i];
+        i++
+    }
+
+    for( int i = sizeof(temp_arr); i <= n; i++ ){
+        final_arr[i] = 0;
+    }
+    
+
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        printf("%d ", final_arr[i]);
     }
 
     return 0;
