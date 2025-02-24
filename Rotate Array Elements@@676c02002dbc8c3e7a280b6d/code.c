@@ -1,21 +1,38 @@
-#include<stdio.h>
-int main(){
-    int a,b;
-    scanf("%d",&a);
-    int arr[a];
-    for( int i = 0 ; i < a ; i++){
-        scanf("%d",&arr[i]);
+#include <stdio.h>
+
+void leftRotate(int arr[], int n, int b) {
+    b = b % n; 
+    int temp[b];
+
+    for (int i = 0; i < b; i++) {
+        temp[i] = arr[i];
     }
-    scanf("%d",&b);
-    for( int i = 0 ; i < b ; i++){
-        if( i == a){
-            arr[a] = arr[0];  
-        }
-        else{
-            arr[i] = arr[i+1];
-        }
+
+    for (int i = 0; i < n - b; i++) {
+        arr[i] = arr[i + b];
     }
-    for(int i = 0 ; i <= a ; i++){
-        printf("%d \n",arr[i]);
+    
+    for (int i = 0; i < b; i++) {
+        arr[n - b + i] = temp[i];
     }
+}
+
+int main() {
+    int n, b;
+    scanf("%d", &n);
+    int arr[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    scanf("%d", &b);
+
+    leftRotate(arr, n, b);
+
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
 }
