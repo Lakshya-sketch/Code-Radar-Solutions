@@ -25,11 +25,10 @@ int main() {
                 counter[i].count++;
             }
         }
-    }
-
-    for(int i = 0; i < n ; i++){
         printf("%d %d\n", i , counter[i].count);
     }
+
+    
 
     return 0;
 }
