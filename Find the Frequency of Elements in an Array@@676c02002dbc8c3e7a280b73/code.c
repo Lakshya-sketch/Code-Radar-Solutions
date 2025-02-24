@@ -1,42 +1,46 @@
 #include <stdio.h>
-#include <stdbool.h>  
-struct count {
-    int count;
+#include <stdbool.h>
+
+// Define a struct to store the element and its frequency
+struct Element {
+    int value;
+    int frequency;
 };
 
 int main() {
-    int n, digit;
-    scanf("%d %d", &n, &digit);
+    int n;
+    
+    // Input the size of the array
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
 
     int arr[n];
+    struct Element freq[n]; 
+    bool visited[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+        visited[i] = false; 
     }
 
-    struct count counter[n];
-    bool visited[n]; 
-
+    int uniqueCount = 0;
     for (int i = 0; i < n; i++) {
-        counter[i].count = 0;
-        visited[i] = false;
-    }
-
-    for (int i = 0; i < n; i++) {
-
-        if ( arr[i] == 0){
-            continue;
-        }
-
         if (!visited[i]) { 
-            counter[i].count = 1; 
+            freq[uniqueCount].value = arr[i];
+            freq[uniqueCount].frequency = 1; 
+
             for (int j = i + 1; j < n; j++) {
                 if (arr[i] == arr[j]) {
-                    counter[i].count++;
-                    visited[j] = true;  
+                    freq[uniqueCount].frequency++;
+                    visited[j] = true; 
                 }
             }
-            printf("%d %d\n", arr[i], counter[i].count);
+            uniqueCount++;
         }
+    }
+
+
+    for (int i = 0; i < uniqueCount; i++) {
+        printf("%d %d\n", freq[i].value, freq[i].frequency);
     }
 
     return 0;
