@@ -3,15 +3,15 @@
 void leftRotate(int arr[], int n, int b) {
     int temp[b];
 
-    for (int i = 0; i < b; i++) {
+    for (int i = 0; i <= b; i++) {
         temp[i] = arr[i];
     }
 
-    for (int i = 0; i < n - b; i++) {
+    for (int i = 0; i <= n - b; i++) {
         arr[i] = arr[i + b];
     }
 
-    for (int i = 0; i < b; i++) {
+    for (int i = 0; i <= b; i++) {
         arr[n - b + i] = temp[i];
     }
 }
