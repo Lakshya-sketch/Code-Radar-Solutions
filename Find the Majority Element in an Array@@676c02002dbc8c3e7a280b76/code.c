@@ -15,6 +15,7 @@ int main() {
     struct Element freq[n]; 
     bool visited[n];
 
+
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
         visited[i] = false; 
@@ -53,7 +54,7 @@ int main() {
     }
 
     for (int i = 0; i < uniqueCount; i++) {
-        printf("%d\n",freq[i].frequency);
+        printf("%d", freq[i].value);
     }
 
     return 0;
