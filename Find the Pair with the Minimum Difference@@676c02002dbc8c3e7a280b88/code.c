@@ -2,43 +2,31 @@
 #include <limits.h>
 #include <stdlib.h>
 
-struct pair {
-    int a, b;
-};
+int compare(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
 
 int main() {
     int a;
     scanf("%d", &a);
-
     if (a < 2) {
         printf("-1");
         return 0;
     }
-
     int arr[a];
     for (int i = 0; i < a; i++) {
         scanf("%d", &arr[i]);
     }
-
-    struct pair diff;
-    int min = INT_MAX; 
-
-    for (int i = 0; i < a; i++) {
-        int next = (i + 1) % a; 
-        int difference = abs(arr[next] - arr[i]);
-
-        if (difference < min) {
-            min = difference;
-            diff.a = arr[i];
-            diff.b = arr[next];
+    qsort(arr, a, sizeof(int), compare);
+    int minDiff = INT_MAX, num1, num2;
+    for (int i = 0; i < a - 1; i++) {
+        int difference = abs(arr[i + 1] - arr[i]);
+        if (difference < minDiff) {
+            minDiff = difference;
+            num1 = arr[i];
+            num2 = arr[i + 1];
         }
     }
-    if (diff.a < diff.b) {
-        int temp = diff.b;
-        diff.b = diff.a;
-        diff.a = temp;
-    }
 
-    printf("%d %d", diff.b, diff.a);
+    printf("%d %d", num1, num2);
     return 0;
 }
