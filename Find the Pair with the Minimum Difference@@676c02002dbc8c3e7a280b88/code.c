@@ -2,8 +2,10 @@
 #include <limits.h>
 #include <stdlib.h>
 
+
 int compare(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
+}
 
 int main() {
     int a;
@@ -29,5 +31,4 @@ int main() {
 
     printf("%d %d", num1, num2);
     return 0;
-}
 }
