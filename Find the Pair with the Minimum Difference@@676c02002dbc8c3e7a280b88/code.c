@@ -3,13 +3,17 @@
 #include <stdlib.h>
 
 struct pair {
-    int differ;
     int a, b;
 };
 
 int main() {
     int a;
     scanf("%d", &a);
+
+    if (a < 2) {
+        printf("-1");
+        return 0;
+    }
 
     int arr[a];
     for (int i = 0; i < a; i++) {
@@ -25,10 +29,14 @@ int main() {
 
         if (difference < min) {
             min = difference;
-            diff.differ = difference;
             diff.a = arr[i];
             diff.b = arr[next];
         }
+    }
+    if (diff.a > diff.b) {
+        int temp = diff.a;
+        diff.a = diff.b;
+        diff.b = temp;
     }
 
     printf("%d %d", diff.a, diff.b);
