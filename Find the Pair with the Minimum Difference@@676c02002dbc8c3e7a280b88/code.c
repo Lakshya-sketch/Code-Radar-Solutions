@@ -39,6 +39,6 @@ int main() {
         diff.a = temp;
     }
 
-    printf("%d %d", diff.a, diff.b);
+    printf("%d %d", diff.b, diff.a);
     return 0;
 }
