@@ -33,10 +33,10 @@ int main() {
             diff.b = arr[next];
         }
     }
-    if (diff.a > diff.b) {
-        int temp = diff.a;
-        diff.a = diff.b;
-        diff.b = temp;
+    if (diff.a < diff.b) {
+        int temp = diff.b;
+        diff.b = diff.a;
+        diff.a = temp;
     }
 
     printf("%d %d", diff.a, diff.b);
