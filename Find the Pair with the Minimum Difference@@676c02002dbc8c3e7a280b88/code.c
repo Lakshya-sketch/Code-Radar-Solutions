@@ -5,14 +5,14 @@
 
 struct pair{
     int differ;
-    int a,b
+    int a,b;
 }
 
 int main() {
     int a;
     scanf("%d", &a);
 
-    struct pair diff[a]
+    struct pair diff[a];
 
     int arr[a];
     for (int i = 0; i < a; i++) {
@@ -40,7 +40,7 @@ int main() {
             index = i;
         }
     }
-    printf("%d %d",diff[index].a,diff[i].b);
+    printf("%d %d",diff[index].a,diff[index].b);
     
 
     return 0;
