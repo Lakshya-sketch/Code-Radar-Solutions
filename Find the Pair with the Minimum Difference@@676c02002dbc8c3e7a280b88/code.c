@@ -6,7 +6,7 @@
 struct pair{
     int differ;
     int a,b;
-}
+};
 
 int main() {
     int a;
