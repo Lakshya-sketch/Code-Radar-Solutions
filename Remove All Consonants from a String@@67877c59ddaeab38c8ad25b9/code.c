@@ -2,7 +2,7 @@
 #include <string.h>
 
 int vowel(char str) {
-    ch = tolower(str); 
+    char = tolower(str); 
     return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
 }
 
