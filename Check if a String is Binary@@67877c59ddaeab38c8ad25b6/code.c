@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[100];
-    scanf("%c",&str);
+    scanf("%s",&str);
     int flag=1;
     for( int i = 0 ; i < strlen(str)  ;i++ ){
         if((str[i] == 0) || (str[i] == 1)){
