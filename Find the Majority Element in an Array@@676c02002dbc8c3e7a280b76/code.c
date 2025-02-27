@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// Define a struct to store the element and its frequency
 struct Element {
     int value;
     int frequency;
