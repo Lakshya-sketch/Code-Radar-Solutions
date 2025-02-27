@@ -16,7 +16,7 @@ int main(){
         printf("Yes");
     }
     if(!(flag)){
-        printf("No")
+        printf("No");
     }
     return 0;
 }
