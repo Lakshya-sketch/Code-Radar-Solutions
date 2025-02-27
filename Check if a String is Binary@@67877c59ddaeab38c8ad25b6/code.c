@@ -1,22 +1,27 @@
-#include<stdio.h>
-#include<string.h>
-int main(){
+#include <stdio.h>
+#include <string.h>
+
+int main() {
     char str[100];
-    scanf("%s",&str);
-    int flag=1;
-    for( int i = 0 ; i < strlen(str)  ;i++ ){
-        if((str[i] == 0) || (str[i] == 1)){
-            flag = 1;
+
+    // Read input string
+    scanf("%s", str);
+
+    int flag = 1; 
+    int length = strlen(str); 
+
+    for (int i = 0; i < length; i++) {
+        if (str[i] != '0' && str[i] != '1') {
+            flag = 0; 
+            break;    
         }
-        else{
-            flag = 0;
-        }
     }
-    if(flag){
-        printf("Yes");
+
+    if (flag) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
     }
-    if(!(flag)){
-        printf("No");
-    }
+
     return 0;
 }
