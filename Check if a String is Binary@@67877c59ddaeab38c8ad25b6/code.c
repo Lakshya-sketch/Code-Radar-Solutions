@@ -13,10 +13,10 @@ int main(){
         }
     }
     if(flag){
-        printf("No");
-    }
-    else{
         printf("Yes");
+    }
+    if(!(flag)){
+        printf("No")
     }
     return 0;
 }
