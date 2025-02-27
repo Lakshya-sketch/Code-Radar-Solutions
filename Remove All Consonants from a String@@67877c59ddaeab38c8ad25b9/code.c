@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <string.h>
-
-int vowel(char str) {
-    char = tolower(str); 
+#include <ctype.h> 
+int isVowel(char ch) { 
+    ch = tolower(ch); 
     return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
 }
 
-int main(){
+int main() {
     char str[100];
-    fgets(&str,100,stdin);
-    for(int i = 0; i < strlen(str) ;i++){
-        if(!(vowel(str[i]))){
-            str[i] = " ";
+    fgets(str, sizeof(str), stdin);
+
+    for (int i = 0; i < strlen(str); i++) {
+        if (!isVowel(str[i])) {
+            str[i] = ' '; 
         }
     }
-    printf("%c",str);
+
+    printf("%s", str);
     return 0;
 }
