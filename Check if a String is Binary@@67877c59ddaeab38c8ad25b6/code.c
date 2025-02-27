@@ -4,7 +4,7 @@ int main(){
     char str[100];
     scanf("%c",&str);
     int flag=1;
-    for( int i = 0 ; i < strlen(str) ;i++ ){
+    for( int i = 0 ; i < strlen(str) - 1 ;i++ ){
         if((str[i] == 0) || (str[i] == 1)){
             flag = 1;
         }
