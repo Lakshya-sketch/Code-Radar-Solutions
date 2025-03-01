@@ -8,7 +8,15 @@ int main(){
             str[i] = '';
         }
     }
-    for
-    printf("%c",str);
+    for (int i = 0, j = strlen(str) - 1; i < j; i++, j--) {
+        if (str[i] != str[j]) {
+            printf("No\n");
+            return 0;
+        }
+        else{
+            printf("Yes")
+        }
+    }
+    
     return 0;
 }
