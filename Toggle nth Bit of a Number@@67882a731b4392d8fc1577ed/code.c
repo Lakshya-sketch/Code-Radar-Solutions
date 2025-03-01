@@ -12,6 +12,7 @@ void DecToBin(int n, int bin[], int *size) {
 
 int main() {
     int n, position;
+    int bin[32];
     int size = 0; 
 
     scanf("%d %d", &n, &position);
