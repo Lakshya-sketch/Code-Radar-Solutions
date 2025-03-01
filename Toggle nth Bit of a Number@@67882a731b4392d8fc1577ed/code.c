@@ -14,7 +14,7 @@ void DecToBin(int n, int bin[], int *size) {
 int BinToDec(int bin[], int size) {
     int decimal = 0;
     for (int i = 0; i < size; i++) {
-        decimal += bin[i] * pow(2, i);
+        decimal += bin[i] * (2 ^ i);
     }
     return decimal;
 }
