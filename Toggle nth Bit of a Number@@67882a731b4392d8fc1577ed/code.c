@@ -11,7 +11,7 @@ void DecToBin(int n, int bin[], int *size) {
 }
 
 int main() {
-    int n, posit
+    int n, posit;
     int size = 0; 
 
     scanf("%d %d", &n, &position);
